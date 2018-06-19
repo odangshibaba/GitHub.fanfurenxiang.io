@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视差滚动</title>
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="css/animate.min.css" type="text/css" />
+
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+ 
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+ 
+<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+ 
+<link rel="stylesheet" href="assets/css/animate.css">
+ 
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+ 
+<link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+ 
+<link rel="stylesheet" href="style.css">
+ 
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+
+
+<style>
+        .bg_2{ background-image:url(img/cd-background-2.jpg);}
+        .bg_3{ background-image:url(img/cd-background-1.jpg);}
+        .bg_4{ background-image:url(img/cd-background-4.jpg);}
+        
+        
+        
+ 
+.wave {
+  background-image: url("css/uFpLbYt.png");
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+  animation: wave-animation 0.5s infinite linear, loading-animation 5s infinite linear alternate;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
+
+
+</style>
+<script src="js/echarts.min.js"></script>
+<script src="js/echarts.word.js"></script>
+<script src="js/china.js"></script>
+</head>
+
+<body>
+ 
+<main class="main_content">
+	<div class="fixed_bg bg_1">
+            <div style="background-color: black;width:1920px;height:1200px;position: absolute;opacity: 0.5;"></div>
+            <video autoplay loop poster="polina.jpg" id="bgvid">  
+                    <source src="fanfu.mp4" type="video/mp4">  
+                </video>
+                <p>
+                        <img src="img/yindaoimg1.png" style="opacity: 0.8;z-index: 200;width:70%" id="yindaop">
+                        
+                    </p>
+                </div>
+                <div class="loading wave" style="z-index: 10000;">
+                    What kind of person
+                </div>
+                
+                <!-- For Firefox -->
+               
+                  
+                  <div class="loading wave" style="z-index: 10000; top: 600px;">
+                    is sacked officials？
+                </div>
+           
+                    
+    </div>
+    <div class="scroll_bg color_1">
+                <section class="services-area section-padding" id="services">
+                                <div class="container">
+                                 
+                                <div class="row">
+                                <div class="col-sm-12">
+                                <div class="section-heading text-center wow fadeInUp" style="letter-spacing: 4px;font-size: 20px; line-height: 35px;">
+                                    
+                                <h2>他们究竟是谁？</h2>
+                                <p class="text-left">党的十八大以来，以习近平同志为核心的党中央,坚持反腐败无禁区、全覆盖、零容忍,“横下一条心,一定要遏制住腐败蔓延势头”。
+                                    根据媒体公开报道以及中央纪检委员会的官方通报的情况 , 截至十九大召开后，因违反政治纪律和政治规矩等落马的省部级以上高官已达  名（军队落马
+                                    高官包括徐才厚和郭伯雄，其他因资料不详未统计）。如此之多的高级官员腐败，<span style="color: brown">他们究竟是怎样的一群人？</span>
+                                    </p>
+                                </div>
+                                </div>
+                                </div>
+                                </section>
+                                <section class="about-area  about-grey section-padding" id="about">
+                                                <div class="container">
+                                                <div class="row">
+                                                <div class="about-wrapper">
+                                                <div class="col-md-6 col-xs-12">
+                                                <div class="about-content-lerf hidden-sm wow fadeInRight" data-wow-delay="0.1s">
+                                                        <div id="main" style="width: 100%;height:400px;"></div>
+                                                        <script type="text/javascript">
+                                                            // 基于准备好的dom，初始化echarts实例
+                                                            var myChart = echarts.init(document.getElementById('main'));
+                                                    
+                                                            // 指定图表的配置项和数据
+                                                            option = {title: {
+                                                                                 text: '十八大以来落马高官人数',
+                                                                                top:'-5',
+                                                                                        textStyle: {
+                                                                                            fontSize: 24
+                                                                                        },
+                                                                                        x: 'center'
+                                                                                    },
+                                                                         xAxis: {
+                                                                            type: 'category',
+                                                                            data: ['2012', '2013', '2014', '2015', '2016', '2017', '2018']
+                                                                        },
+                                                                        yAxis: {
+                                                                            type: 'value'
+                                                                        },
+                                                                        tooltip: {
+                                                                        triggerOn: 'onmousemove',
+                                                                        formatter: function(params) {
+                                                                            return '时间: ' + params.name + '<br>人数: ' + params.value + '个';
+                                                                        }
+                                                                    },
+                                                                        series: [{
+                                                                            data: [1, 17, 63, 57, 31, 24, 9],
+                                                                            type: 'line'
+                                                                        }]
+                                                                    };
+                                                    
+                                                            // 使用刚指定的配置项和数据显示图表。
+                                                            myChart.setOption(option);
+                                                        </script>
+                                                </div>
+                                                </div>
+                                                <div class="col-md-6 col-xs-12">
+                                                <div class="about-content-right wow fadeInRight"style="letter-spacing: 4px;font-size: 15px; line-height: 35px;">
+                                                <h3 class="text-center"></h3>
+                                                <p class="text-left">自2012年11月在北京召开“中共十八大”以来，大会选举了以习近平同志为核心的新一届中共中央领导层，新一届国家领导层坚持反腐败无禁区、全覆盖、零容忍。
+                                                    反腐行动于“十八大”后开始发力，并2013年可以说是“反腐的起步之年”。这一年中，全党对党风廉政建设和腐败斗争重要性的认识不断提高，在腐败治理目标、治理定位、治理结构、治理途径、治理程序和具体治理方法等方面提出了一系列新思路，逐步构成了一个较为完善的思想理论体系。
+                                                    在“十八大”以来，截止2018年3月，在这五年间，2014年落马官员人数最甚，这也是在前一年充分完善和发展了反腐思想理论体系的基础之上的卓越成果。
+                                                    </p>
+                                                <p></p>
+                                                
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                </section>
+
+
+                                <section class="portfolio-area section-padding" id="portfolio">
+                                        <div class="container">
+                                         
+                                        <div class="row">
+                                        <div class="col-sm-12">
+                                        <div class="section-heading text-center wow fadeInUp">
+                                        <h2>落马官员中耳熟能详的大老虎</h2>
+                                        <p class="hahap">近几年来，媒体报道的大老虎人数不少，所任职务对国家也影响重大，让我们一起来回顾一下近几年落马的有名高官</p>
+                                        </div>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="controls wow fadeInUp">
+                                        <button type="button" data-filter="all">全部</button>
+                                        <button type="button" data-filter=".ux">军事系统</button>
+                                        <button type="button" data-filter=".graphic">党内机构</button>
+                                        <button type="button" data-filter=".web">行政系统</button>
+                                        <button type="button" data-filter=".interior">国企</button>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                        <div class="portfolio-wrapper wow fadeInUp">
+                                         
+                                        <div class="mix ux">
+                                        <img src="assets/images/portfolio/pf1.jpg" alt="portfolio">
+                                        <div class="pf-hover">
+                                        <h5><span>令计划</span></h5>
+                                        <h5>国政协副主席，中央统战部部长</h5>
+                                        <a href="#"></i></a>
+                                        </div>
+                                        </div>
+                                         
+                                        <div class="mix graphic">
+                                        <img src="assets/images/portfolio/pf2.jpg" alt="portfolio">
+                                        <div class="pf-hover">
+                                        <h5><span>周永康</span></h5>
+                                        <h5>十七届中共中央政治局委员、常委</h5>
+                                        <a href="#"></i></a>
+                                        </div>
+                                        </div>
+                                         
+                                        <div class="mix web">
+                                        <img src="assets/images/portfolio/pf3.jpg" alt="portfolio">
+                                        <div class="pf-hover">
+                                        <h5><span>薄熙来</span></h5>
+                                        <h5>中央政治局委员，重庆市委书记</h5>
+                                        <a href="#"></i></a>
+                                        </div>
+                                        </div>
+                                         
+                                        <div class="mix interior">
+                                        <img src="assets/images/portfolio/pf4.jpg" alt="portfolio">
+                                        <div class="pf-hover">
+                                        <h5><span>徐才厚</span></h5>
+                                        <h5>中央军事委员会副主席，中央政治局委员</h5>
+                                        <a href="#"></i></a>
+                                        </div>
+                                        </div>
+                                         
+                                        <div class="mix ux">
+                                        <img src="assets/images/portfolio/pf5.jpg" alt="portfolio">
+                                        <div class="pf-hover">
+                                        <h5><span>郭伯雄</span></h5>
+                                        <h5>中央政治局委员，中央军事委员会副主席</h5>
+                                        <a href="#"></i></a>
+                                        </div>
+                                        </div>
+                                         
+                                       
+                                         
+                                      
+                                        </div>
+                                        <a href="#" class="active learn-more">Load more</a>
+                                        </div>
+                                        </div>
+                                        </section>
+                                         
+    </div>
+    <div class="fixed_bg bg_2">
+                
+    	<canvas id="c"></canvas>
+
+<script>
+;(function() {
+  
+  'use strict'
+  
+  var c = document.getElementById('c');
+  var ctx = c.getContext('2d');
+  var w = c.width = window.innerWidth;
+  var h = c.height = window.innerHeight;
+  var cx = w / 2;
+  var cy = h / 2;
+  var Box = function(x, y, vx, color) {
+    this.color = color;
+    this.vx = vx;
+    this.x = x;
+    this.y = y;
+    this.w = 10 + Math.random() * 50;
+    this.h = 5 + Math.random() * 300;
+  };
+  Box.prototype = {
+    constructor: Box,
+    update: function() {
+      this.x += this.vx;
+      if(this.x < -this.w / 2) {
+        this.x = w + this.w / 2;
+      }
+    },
+    render: function(ctx) {
+      ctx.save();
+      ctx.fillStyle = this.color;
+      ctx.translate(this.x, this.y);
+      ctx.fillRect(-this.w/2, -this.h, this.w, this.h);
+      ctx.restore();
+    }
+  };
+  
+  var ctr = 50;
+  var boxes = [];
+  var boxes2 = [];
+  var boxes3 = [];
+  var box; 
+  var speed = -5;
+  
+  for(var i = 0; i < ctr; i++) {
+    box = new Box(Math.random() * w, h, speed * 0.5, '#e5e5e5');
+    boxes.push(box);
+  }
+  for(var i = 0; i < ctr; i++) {
+    box = new Box(Math.random() * w, h, speed * 0.8, '#cccccc');
+    boxes2.push(box);
+  }  
+  for(var i = 0; i < ctr; i++) {
+    box = new Box(Math.random() * w, h, speed, '#999999');
+    boxes3.push(box);
+  }    
+  
+  requestAnimationFrame(function loop() {
+    requestAnimationFrame(loop);
+    ctx.clearRect(0, 0, w, h);
+    ctx.globalAlpha = 0.9;
+    for(var i = 0, len = boxes.length; i < len; i++) {
+      box = boxes[i];
+      box.update();
+      box.render(ctx);
+    }
+    for(var i = 0, len = boxes2.length; i < len; i++) {
+      box = boxes2[i];
+      box.update();
+      box.render(ctx);
+    }
+    for(var i = 0, len = boxes3.length; i < len; i++) {
+      box = boxes3[i];
+      box.update();
+      box.render(ctx);
+    }    
+  });
+  
+})();
+</script>
+    </div>
+    <div class="scroll_bg color_2">
+    	 
+<section class="about-area section-padding">
+    <div class="container">
+    <div class="row">
+    <div class="about-wrapper">
+    <div class="col-md-6 col-xs-12">
+    <div class="about-content-right wow fadeInLeft">
+    <h3>落马官员的部门分布</h3>
+    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    <p></p>
+    
+    </div>
+    </div>
+    <div class="col-md-6 col-xs-12">
+    <div class="about-content-lerf hidden-sm wow fadeInLeft" data-wow-delay="0.1s">
+        <div id="mainone" style="width: 800px;height:400px;"></div>
+        <script type="text/javascript">
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('mainone'));
+    
+            // 指定图表的配置项和数据
+            option = { tooltip: {
+         formatter: '{b}:<br />落马人数： {c}人'
+    },
+    series: [{
+        type: 'treemap',
+        roam:false,
+        data: [{
+            name: '地方政协',            // First tree
+            value: 22,
+            
+        }, {
+            name: '国企',            // Second tree
+            value: 16,
+            
+        },
+        {
+            name: '行政机构',            // First tree
+            value: 61,
+            
+        }, {
+            name: '军队系统',            // First tree
+            value: 63,
+            
+        },{
+            name: '权力机关',            // First tree
+            value: 21,
+            
+        }, {
+            name: '全国政协',            // First tree
+            value: 4,
+            
+        }, {
+            name: '司法机关',            // First tree
+            value: 3,
+            
+        }, {
+            name: '中国机构',            // First tree
+            value: 45,
+            
+        },  ]
+    }]
+};
+
+    
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+            window.onresize = myChart.resize;
+$("#dcDataUseStatisticContainer").resize(function(){
+$(myChart).resize();
+})
+        </script>
+</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="services-area section-padding" id="services">
+        <div class="container">
+         
+        <div class="row">
+        <div class="col-sm-12">
+        <div class="section-heading text-center wow fadeInUp" style="letter-spacing: 4px;font-size: 20px; line-height: 35px;">
+            
+        <h2>他们究竟是谁？</h2>
+        <p class="text-left">党的十八大以来，以习近平同志为核心的党中央,坚持反腐败无禁区、全覆盖、零容忍,“横下一条心,一定要遏制住腐败蔓延势头”。
+            根据媒体公开报道以及中央纪检委员会的官方通报的情况 , 截至十九大召开后，因违反政治纪律和政治规矩等落马的省部级以上高官已达  名（军队落马
+            高官包括徐才厚和郭伯雄，其他因资料不详未统计）。如此之多的高级官员腐败，<span style="color: brown">他们究竟是怎样的一群人？</span>
+            </p>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <section class="services-area section-padding" id="services">
+            <div class="container">
+             
+            <div class="row">
+            <div class="col-sm-12">
+            
+                
+                <div id="maintwo" style="width: 1200px;height:600px;"></div>
+                <script type="text/javascript">
+                    // 基于准备好的dom，初始化echarts实例
+                    var myChart = echarts.init(document.getElementById('maintwo'));
+            
+                    // 指定图表的配置项和数据
+                    //数据纯属虚构
+
+//数据纯属虚构
+
+var option = {
+    title: {
+        text: '落马官员落马时所在省份分布',
+        textStyle: {
+            fontSize: 30
+        },
+        x: 'center'
+    },
+    tooltip: {
+        show: true,
+        formatter: function(params) {
+            return params.name + '：' + params.data['value'] + '人'
+        },
+    },
+    visualMap: {
+        min: 0,
+        max: 35,
+        left: 'left',
+        top: 'bottom',
+        text: ['人数', ''], // 文本，默认为数值文本
+        calculable: true,
+        inRange:{
+            color:['#ffffff','#d00000']
+        }
+    },
+    series: [{
+        name: '患病率',
+        type: 'map',
+        map: 'china',
+        roam: false,
+        label: {
+            show: false,
+        },
+        data:[
+            {name: '北京',value: 35 },
+            {name: '天津',value:2  },
+            {name: '上海',value:2 },
+            {name: '重庆',value: 2 },
+            {name: '河北',value:5 },
+            {name: '河南',value:3 },
+            {name: '云南',value:2 },
+            {name: '辽宁',value:6  },
+            {name: '黑龙江',value: 4 },
+            {name: '湖南',value: 3 },
+            {name: '安徽',value: 5 },
+            {name: '山东',value:2  },
+            {name: '新疆',value: 1 },
+            {name: '江苏',value: 4 },
+            {name: '浙江',value:2  },
+            {name: '江西',value:2  },
+            {name: '湖北',value: 4 },
+            {name: '广西',value: 2 },
+            {name: '甘肃',value: 3 },
+            {name: '山西',value: 7 },
+            {name: '内蒙古',value: 3 },
+            {name: '陕西',value:2  },
+            {name: '吉林',value:2  },
+            {name: '福建',value: 2 },
+            {name: '贵州',value: 1 },
+            {name: '广东',value: 6 },
+            {name: '青海',value:1  },
+            {name: '西藏',value:1 },
+            {name: '四川',value:4  },
+            {name: '宁夏',value:1  },
+            {name: '海南',value: 2 },
+            {name: '台湾',value: 0 },
+            {name: '香港',value:2},
+            {name: '澳门',value:0 },
+        ]
+    }, ]
+};
+
+            
+                    // 使用刚指定的配置项和数据显示图表。
+                    myChart.setOption(option);
+                </script>
+          
+            </div>
+            </div>
+            </section>
+
+
+            <section class="services-area section-padding" id="services">
+                <div class="container">
+                 
+                <div class="row">
+                <div class="col-sm-12">
+                <div class="section-heading text-center wow fadeInUp" style="letter-spacing: 4px;font-size: 20px; line-height: 35px;">
+                    
+                   
+                <p class="text-left">党的十八大以来，以习近平同志为核心的党中央,坚持反腐败无禁区、全覆盖、零容忍,“横下一条心,一定要遏制住腐败蔓延势头”。
+                    根据媒体公开报道以及中央纪检委员会的官方通报的情况 , 截至十九大召开后，因违反政治纪律和政治规矩等落马的省部级以上高官已达  名（军队落马
+                    高官包括徐才厚和郭伯雄，其他因资料不详未统计）。如此之多的高级官员腐败，<span style="color: brown">他们究竟是怎样的一群人？</span>
+                    </p>
+                </div>
+                </div>
+                </div>
+                </section>
+
+                <section class="about-area section-padding">
+                    <div class="container">
+                    <div class="row">
+                    <div class="about-wrapper">
+                    <div class="col-md-6 col-xs-12">
+                    <div class="about-content-right wow fadeInLeft">
+                    <h3>落马官员籍贯分布</h3>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                    <div class="about-content-lerf hidden-sm wow fadeInLeft" data-wow-delay="0.1s">
+                        <div id="mainthree" style="width: 800px;height:600px;"></div>
+                        <script type="text/javascript">
+                            // 基于准备好的dom，初始化echarts实例
+                            var myChart = echarts.init(document.getElementById('mainthree'));
+                    
+                            // 指定图表的配置项和数据
+                            var xData = ['安徽','北京','福建','甘肃','广东','广西','贵州','海南','河北','河南','黑龙江','湖北','湖南','吉林','江苏','江西','辽宁','内蒙古','山东','山西','陕西','上海','四川','天津','云南','浙江','湖南','重庆']
+
+var data = [13, 3, 3, 4, 3, 3,1, 2, 16,14,5,9,10, 5, 14,8,20,3,30,18,12,2,4,4,4,9,3]
+
+option = {
+    backgroundColor: "#fff",
+    title: {
+        text: "政策匹配度",
+        textStyle: {
+            color: '#fff',
+            fontSize: '22'
+        },
+        subtextStyle: {
+            color: '#90979c',
+            fontSize: '16',
+
+        },
+    },
+    tooltip: {
+        show: "true",
+        trigger: 'item',
+        backgroundColor: 'rgba(0,0,0,0.7)', // 背景
+        padding: [8, 10], //内边距
+        extraCssText: 'box-shadow: 0 0 3px rgba(255, 255, 255, 0.4);', //添加阴影
+        formatter: function(params) {
+            if (params.seriesName != "") {
+                return params.name + ' ： ' + params.value + ' 人';
+            }
+        },
+
+    },
+    grid: {
+        borderWidth: 0,
+        top: 110,
+        bottom: 95,
+        textStyle: {
+            color: "#fff"
+        }
+    },
+    xAxis: [{
+        type: 'category',
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#363e83',
+            }
+        },
+        axisLabel: {interval:0,
+            inside: false,
+            textStyle: {
+                color: '#bac0c0',
+                fontWeight: 'normal',
+                fontSize: '12',
+                
+            },
+            // formatter:function(val){
+            //     return val.split("").join("\n")
+            // },
+        },
+        data: xData,
+    }, {
+        type: 'category',
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            show: false
+        },
+        splitArea: {
+            show: false
+        },
+        splitLine: {
+            show: false
+        },
+        data: xData,
+    }],
+    yAxis: {
+        type: 'value',
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: true,
+            lineStyle: {
+                color: '#32346c',
+            }
+        },
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: '#32346c ',
+            }
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#bac0c0',
+                fontWeight: 'normal',
+                fontSize: '12',
+            },
+            formatter: '{value}人',
+        },
+    },
+    series: [{
+            name: '生师比(%)',
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    show: true,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#00c0e9'
+                    }, {
+                        offset: 1,
+                        color: '#3b73cf'
+                    }]),
+                    barBorderRadius: 50,
+                    borderWidth: 0,
+                },
+                emphasis: {
+                    shadowBlur: 15,
+                    shadowColor: 'rgba(105,123, 214, 0.7)'
+                }
+            },
+            zlevel: 2,
+            barWidth: '10%',
+            data: data,
+        },
+        
+    ]
+}
+
+                    
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+                        </script>
+                </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+
+
+
+
+
+
+                    <section class="about-area section-padding">
+                        <div class="container">
+                        <div class="row">
+                        <div class="about-wrapper">
+                        <div class="col-md-6 col-xs-12">
+                        <div class="about-content-right wow fadeInLeft">
+                        <h3>什么样年龄段的人容易成为落马高官</h3>
+                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. But also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                        <a href="#" class="learn-more">Learn more</a>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                        <div class="about-content-lerf hidden-sm wow fadeInLeft" data-wow-delay="0.1s">
+                            <div id="mainfive" style="width: 800px;height:600px;"></div>
+                            <script type="text/javascript">
+                                // 基于准备好的dom，初始化echarts实例
+                                var myChart = echarts.init(document.getElementById('mainfive'));
+                        
+                                // 指定图表的配置项和数据
+                                var dataStyle = {
+    normal: {
+        label: {
+            show: false
+        },
+        labelLine: {
+            show: false
+        },
+        shadowBlur: 40,
+        shadowColor: 'rgba(40, 40, 40,0.3)',
+    }
+};
+
+option = {
+    backgroundColor: '#fff',
+    color: ['#6d4f8d','#85b6b2' , '#cd5e7e', '#e38980', '#f29e29', '#f7db88', '#ffdb6d'],
+
+    title: {
+        text: '落马官员出身年代',
+        x: 'center',
+        top: '36%',
+        textStyle: {
+            color: '#6c6c6c'
+        }
+    },
+
+    legend: {
+
+        x: 'center',
+        top: '92%',
+        data: ['20世纪40年代', '20世纪50年代', '20世纪60年代', '20世纪70年代', ]
+    },
+    series: [{
+        name: '主题配色下载占比',
+        type: 'pie',
+        radius: ['50%', '70%'],
+        avoidLabelOverlap: false,
+        itemStyle: dataStyle,
+        label: {
+            normal: {
+                show: false,
+                position: 'center'
+            },
+            emphasis: {
+                show: true,
+                formatter: function(param) {
+                    return param.name + '\n' + param.value + '人';
+                },
+                textStyle: {
+                    fontSize: '30',
+                    fontWeight: 'bold'
+                }
+            }
+        },
+        labelLine: {
+            normal: {
+                show: true
+            }
+        },
+        data: [{
+            value: 14,
+            name: '20世纪40年代'
+        }, {
+            value: 149,
+            name: '20世纪50年代'
+        }, {
+            value: 58,
+            name: '20世纪60年代'
+        }, {
+            value: 1,
+            name: '20世纪70年代'
+        }, ]
+    }]
+};
+                        
+                                // 使用刚指定的配置项和数据显示图表。
+                                myChart.setOption(option);
+                            </script>
+                    </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </section>
+            
+    </div>
+    
+    <div class="fixed_bg bg_3" style="bottom: 100px;">
+    	<p>图片背景第三页</p> 
+    </div>
+    <div class="scroll_bg color_3"style="bottom: 120px;">
+    	<section class="services-area section-padding" id="services">
+            <div class="container">
+             
+            <div class="row">
+            <div class="col-sm-12">
+            <div class="section-heading text-center wow fadeInUp" style="letter-spacing: 4px;font-size: 20px; line-height: 35px;">
+                
+            <h2>他们究竟是谁？</h2>
+            <p class="text-left">党的十八大以来，以习近平同志为核心的党中央,坚持反腐败无禁区、全覆盖、零容忍,“横下一条心,一定要遏制住腐败蔓延势头”。
+                根据媒体公开报道以及中央纪检委员会的官方通报的情况 , 截至十九大召开后，因违反政治纪律和政治规矩等落马的省部级以上高官已达  名（军队落马
+                高官包括徐才厚和郭伯雄，其他因资料不详未统计）。如此之多的高级官员腐败，<span style="color: brown">他们究竟是怎样的一群人？</span>
+                </p>
+            </div>
+            </div>
+            </div>
+            </section>
+
+            <section class="services-area section-padding" id="services">
+                <div class="container">
+                 
+                <div class="row">
+                <div class="col-sm-12">
+                
+                    
+                    <div id="mainfour" style="width: 1200px;height:600px;"></div>
+                    <script type="text/javascript">
+                        // 基于准备好的dom，初始化echarts实例
+                        var myChart = echarts.init(document.getElementById('mainfour'));
+                
+                        // 指定图表的配置项和数据
+                        //数据纯属虚构
+    
+                        option = {
+    title: {
+        text: '热点分析',
+      
+        x: 'center',
+        textStyle: {
+            fontSize: 23
+        }
+
+    },
+    backgroundColor: '#F7F7F7',
+    tooltip: {
+        show: true
+    },
+    toolbox: {
+        feature: {
+            saveAsImage: {
+                iconStyle: {
+                    normal: {
+                        color: '#FFFFFF'
+                    }
+                }
+            }
+        }
+    },
+    series: [{
+        name: '热点分析',
+        type: 'wordCloud',
+        //size: ['9%', '99%'],
+        sizeRange: [6, 66],
+        //textRotation: [0, 45, 90, -45],
+        rotationRange: [-45, 90],
+        //shape: 'circle',
+        textPadding: 0,
+        autoSize: {
+            enable: true,
+            minSize: 6
+        },
+        textStyle: {
+            normal: {
+                color: function() {
+                    return 'rgb(' + [
+                        Math.round(Math.random() * 160),
+                        Math.round(Math.random() * 160),
+                        Math.round(Math.random() * 160)
+                    ].join(',') + ')';
+                }
+            },
+            emphasis: {
+                shadowBlur: 10,
+                shadowColor: '#333'
+            }
+        },
+        data: [{
+            name: "Jayfee",
+            value: 666
+        }, {
+            name: "Nancy",
+            value: 520
+        }]
+    }]
+};
+
+var JosnList = [];
+
+JosnList.push({
+    name: "Jayfee",
+    value: 666
+}, {
+    name: "Nancy",
+    value: 520
+}, {
+    name: "生活资源",
+    value: "999"
+}, {
+    name: "供热管理",
+    value: "888"
+}, {
+    name: "供气质量",
+    value: "777"
+}, {
+    name: "生活用水管理",
+    value: "688"
+}, {
+    name: "一次供水问题",
+    value: "588"
+}, {
+    name: "交通运输",
+    value: "516"
+}, {
+    name: "城市交通",
+    value: "515"
+}, {
+    name: "环境保护",
+    value: "483"
+}, {
+    name: "房地产管理",
+    value: "462"
+}, {
+    name: "城乡建设",
+    value: "449"
+}, {
+    name: "一次供水问题",
+    value: "11"
+});
+
+option.series[0].data = JosnList;
+
+
+
+                        
+                        
+                        
+
+
+
+      
+                        // 使用刚指定的配置项和数据显示图表。
+                        myChart.setOption(option);
+                    </script>
+              
+                </div>
+                </div>
+                </section>
+    </div>
+    <div class="fixed_bg bg_4"style="bottom: 130px;">
+    	<p>图片背景第四页</p>
+    </div>
+</main>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+
+ 
+<script src="assets/js/mixitup.min.js"></script>
+ 
+<script src="assets/js/owl.carousel.min.js"></script>
+ 
+<script src="assets/js/jquery.easing.min.js"></script>
+ 
+<script src="assets/js/wow-1.3.0.min.js"></script>
+<script>
+            // Active WOW js
+             if($('.wow').length){
+                var wow = new WOW({
+                    boxClass:     'wow',
+                    animateClass: 'animated',
+                    offset:       0,
+                    mobile:       true,
+                    live:         true 
+                  });
+                wow.init();
+            };
+        </script>
+ 
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/active.js"></script>
+</body>
+</html>
