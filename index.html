@@ -27,7 +27,7 @@
 <style>
         .bg_2{ background-image:url(img/cd-background-2.jpg);}
         .bg_3{ background-image:url(img/cd-background-1.jpg);}
-        .bg_4{ background-image:url(img/cd-background-4.jpg);}
+        
         
         
         
@@ -49,8 +49,9 @@
 
 
 </style>
-<script src="js/echarts.min.js"></script>
-<script src="js/echarts.word.js"></script>
+<script src="js/echarts-3.8.4.min.js"></script>
+<script src="js/echarts-wordcloud.min.js"></script>
+<script src="js/echarts-wordcloud.js"></script>
 <script src="js/china.js"></script>
 </head>
 
@@ -812,8 +813,8 @@ option = {
             
     </div>
     
-    <div class="fixed_bg bg_3" style="bottom: 100px;">
-    	<p>图片背景第三页</p> 
+    <div class="fixed_bg bg_3" style="bottom: 110px;">
+    	<p></p> 
     </div>
     <div class="scroll_bg color_3"style="bottom: 120px;">
     	<section class="services-area section-padding" id="services">
@@ -844,21 +845,17 @@ option = {
                     <script type="text/javascript">
                         // 基于准备好的dom，初始化echarts实例
                         var myChart = echarts.init(document.getElementById('mainfour'));
-                
-                        // 指定图表的配置项和数据
-                        //数据纯属虚构
-    
                         option = {
     title: {
-        text: '热点分析',
-      
+        text: '',
+       
         x: 'center',
         textStyle: {
             fontSize: 23
         }
 
     },
-    backgroundColor: '#F7F7F7',
+    backgroundColor: '#fff',
     tooltip: {
         show: true
     },
@@ -901,71 +898,147 @@ option = {
                 shadowColor: '#333'
             }
         },
-        data: [{
-            name: "Jayfee",
-            value: 666
-        }, {
-            name: "Nancy",
-            value: 520
-        }]
+       
     }]
 };
 
 var JosnList = [];
 
 JosnList.push({
-    name: "Jayfee",
-    value: 666
+    name: "隐私",
+    value: 34
 }, {
-    name: "Nancy",
-    value: 520
+    name: "传统文化",
+    value: 13
 }, {
-    name: "生活资源",
-    value: "999"
+    name: "利益",
+    value: "24"
 }, {
-    name: "供热管理",
-    value: "888"
+    name: "腐败存量",
+    value: "13"
 }, {
-    name: "供气质量",
-    value: "777"
+    name: "制度",
+    value: "40"
 }, {
-    name: "生活用水管理",
-    value: "688"
+    name: "反腐败",
+    value: "8"
 }, {
-    name: "一次供水问题",
-    value: "588"
+    name: "金融",
+    value: "29"
 }, {
-    name: "交通运输",
-    value: "516"
+    name: "心理",
+    value: "27"
 }, {
-    name: "城市交通",
-    value: "515"
+    name: "权利",
+    value: "26"
 }, {
-    name: "环境保护",
-    value: "483"
+    name: "群体",
+    value: "25"
 }, {
-    name: "房地产管理",
-    value: "462"
+    name: "申报制",
+    value: "23"
 }, {
-    name: "城乡建设",
-    value: "449"
+    name: "实名制",
+    value: "19"
 }, {
-    name: "一次供水问题",
-    value: "11"
-});
+    name: "家庭",
+    value: "19"
+}, {
+    name: "公示制",
+    value: "18"
+}, {
+    name: "认知",
+    value: "18"
+}, {
+    name: "立法",
+    value: "17"
+}, {
+    name: "困境",
+    value: "16"
+}, {
+    name: "抵触",
+    value: "12"
+}, {
+    name: "稳定",
+    value: "12"
+}, {
+    name: "既得利益",
+    value: "10"
+}, {
+    name: "反腐",
+    value: "10"
+}, {
+    name: "核查",
+    value: "10"
+}, {
+    name: "贪腐",
+    value: "10"
+}, {
+    name: "监管",
+    value: "10"
+}, {
+    name: "意识形态",
+    value: "9"
+}, {
+    name: "不动产",
+    value: "9"
+}, {
+    name: "阻力",
+    value: "9"
+}, {
+    name: "健全制度",
+    value: "9"
+}, {
+    name: "赃款",
+    value: "6"
+}, {
+    name: "公共",
+    value: "6"
+}, {
+    name: "主观",
+    value: "6"
+}, {
+    name: "所得",
+    value: "6"
+}, {
+    name: "生态",
+    value: "6"
+}, {
+    name: "身份",
+    value: "6"
+}, {
+    name: "不公",
+    value: "6"
+}, {
+    name: "学者",
+    value: "6"
+}, {
+    name: "主体",
+    value: "6"
+}, {
+    name: "政策",
+    value: "6"
+}, {
+    name: "人民",
+    value: "6"
+}, {
+    name: "技术",
+    value: "5"
+}, {
+    name: "交易",
+    value: "5"
+}, {
+    name: "公示",
+    value: "5"
+}, {
+    name: "漏洞",
+    value: "5"
+}, );
 
 option.series[0].data = JosnList;
 
 
 
-                        
-                        
-                        
-
-
-
-      
-                        // 使用刚指定的配置项和数据显示图表。
                         myChart.setOption(option);
                     </script>
               
@@ -973,8 +1046,16 @@ option.series[0].data = JosnList;
                 </div>
                 </section>
     </div>
-    <div class="fixed_bg bg_4"style="bottom: 130px;">
-    	<p>图片背景第四页</p>
+    <div class="fixed_bg bg_4"style="bottom: 130px; overflow: hidden;">
+            <div style="background-color: black;width:1920px;height:1200px;position: absolute;opacity: 0.5;"></div>
+            
+    	<video autoplay loop poster="polina.jpg" id="bgvid2">  
+            <source src="p4.mp4" type="video/mp4">  
+        </video>
+        
+       
+                
+            
     </div>
 </main>
 <script src="assets/js/jquery-2.1.4.min.js"></script>
