@@ -89,3 +89,5 @@ video#bgvid2 {
   
 
 .hahap{letter-spacing: 4px;font-size: 15px; line-height: 35px;}
+.fontkkl{text-align:justify; text-justify:inter-ideograph;letter-spacing: 4px;font-size: 16px; line-height: 35px;font-family:'Source-Han-Ligh12e5a469701a01b' !important;text-indent:2em}
+.section-heading{ text-align:justify; text-justify:inter-ideograph;letter-spacing: 4px;font-size: 16px; line-height: 35px;}
